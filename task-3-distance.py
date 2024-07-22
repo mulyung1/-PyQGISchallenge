@@ -1,9 +1,10 @@
+
 nairobi =[-1.2858226521480587, 36.81829733363576]
 thika=[-1.034827265685195, 37.0766643277757]
 mwingi=[-0.9374186346062278, 38.06049881749188]
 
 
-#initialize the 
+#initialize the calculator
 dist=QgsDistanceArea()
 
 #set the elliposoid to compute with
