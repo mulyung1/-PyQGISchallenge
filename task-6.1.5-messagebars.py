@@ -6,7 +6,7 @@ see time anytime the clock icon is pressed in a qmessagebar
 '''
 from datetime import datetime
 
-#path to your icon
+#path to your icon :replace with path to your shapefile
 # icondir=r'C:\Users\hp\jupyter\QGISCHALLENGE\data\question.svg'
 icon=QIcon(icondir)
 

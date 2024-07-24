@@ -10,7 +10,7 @@ different layers have different syntax for loading
 seethe PYQGIS DEVELOPER COOKBOOK: 'https://docs.qgis.org/3.34/en/docs/pyqgis_developer_cookbook/loadlayer.html#vector-layers'
 
 '''
-#add a shapefile
+#add a shapefile: replace with path to your shapefile
 layer=r'C:\Users\hp\jupyter\QGISCHALLENGE\data\seismic_zones.shp'
 iface.addVectorLayer(layer, 'seismic_zones', 'ogr')
 
