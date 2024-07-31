@@ -12,12 +12,12 @@ class Car():
     
     #custom functions
     def start(self):
-        print('Car started')
+        print('VROOOM!!---Car started---')
         self.started=True
         self.stopped=False
     
     def stop(self):
-        print('Car Stopped')
+        print('SKREETHCH!--Car Stopped---')
         self.stopped=True
         
 #build our car
@@ -29,7 +29,7 @@ car2=Car('red','manual')
 car2.start()
 
 #check color of car2 and 1
-print(car2.color)
-print(car1.color)
+print(f'Build succesful!!:->> Car 1 is of color:{car1.color}')
+print(f'Car 2 is of color:{car2.color}')
 
 

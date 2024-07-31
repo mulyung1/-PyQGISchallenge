@@ -10,7 +10,7 @@ import os
 import inspect
 from PyQt5.QtWidgets import QAction
 from PyQt5.QtGui import QIcon
-from qgis.core import QgsRasterLayer, QgsProject
+from qgis.core import QgsRasterLayer, QgsProject, QgsCoordinateReferenceSystem
 
 cmd_folder = os.path.split(inspect.getfile(inspect.currentframe()))[0]
 
@@ -49,3 +49,20 @@ class BasemapLoaderPlugin:
             self.iface.messageBar().pushSuccess('Success', 'Basemap Layer Loaded')
         else:
             self.iface.messageBar().pushCritical('Error', 'Invalid Basemap Layer')
+    
+        '''============EXERCISE=========
+        To change project crs to crs of loaded layer. '''
+
+        #make an instance of the current running project
+        self.proj=QgsProject.instance()
+        # Create a new CRS object
+        target_crs = QgsCoordinateReferenceSystem()
+
+        target_crs.createFromOgcWmsCrs(crs)
+        #set crs
+        self.proj.setCrs(target_crs)
+
+        # Display a success message indicating the CRS has been set
+        self.iface.messageBar().pushSuccess('NOTE:', f'The Project crs has been set to layer crs: {crs}')
+
+        '''============END==========='''
