@@ -3,6 +3,6 @@ name=Basemap Loader
 description=This plugin adds a basemap layer to QGIS.
 version=1.0
 qgisMinimumVersion=3.0
-author=Ujaval Gandhi
+author=Victor Martin
 email=victorsonofmartin@gmail.com
 icon=icons8-python-48.png
