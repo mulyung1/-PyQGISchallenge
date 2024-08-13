@@ -1,6 +1,5 @@
 """
-This is the script from 11.3
-it serves as our algorithm.py file 
+this script is from 11.3. it has the main logic to do operations
 ***************************************************************************
 *    SAVE THIS SCRIPT  INTO THE PROCESSING SCRIPT EDITOR TO RUN                                                                   *
 *   This program is free software; you can redistribute it and/or modify  *
