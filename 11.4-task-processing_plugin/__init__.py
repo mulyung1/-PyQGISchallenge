@@ -1,3 +1,5 @@
+#initializes the plugin 
+
 from .save_attributes import SaveAttributesPlugin
 
 def classFactory(iface):

@@ -23,7 +23,7 @@ from qgis.core import (QgsProcessing,
 from qgis import processing
 
 
-class SaveAttributtesAlgorithm(QgsProcessingAlgorithm):
+class SaveAttributesAlgorithm(QgsProcessingAlgorithm):
 
     INPUT = 'INPUT'
     OUTPUT = 'OUTPUT'
@@ -35,7 +35,7 @@ class SaveAttributtesAlgorithm(QgsProcessingAlgorithm):
         return QCoreApplication.translate('Processing', string)
 
     def createInstance(self):
-        return SaveAttributtesAlgorithm()
+        return SaveAttributesAlgorithm()
 
     def name(self):
         """
