@@ -20,7 +20,7 @@ class SaveAttributesProvider(QgsProcessingProvider):
     def loadAlgorithms(self):
         #add the first algorithm
         self.addAlgorithm(SaveAttributesAlgorithm())
-        #add more algorithms
+        #add more algorithms i.e more processing scripts 
 
     def id(self):
         #the hovername of the tool/plugin
