@@ -6,6 +6,7 @@ from PyQt5.QtGui import QIcon
 
 from qgis.core import QgsProcessingProvider
 from .save_attributes_algorithm import SaveAttributesAlgorithm
+#import more algorithm clases here. i.e different processing scripts 
 
 
 class SaveAttributesProvider(QgsProcessingProvider):
