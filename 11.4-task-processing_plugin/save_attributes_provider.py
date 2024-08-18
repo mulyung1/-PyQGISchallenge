@@ -6,6 +6,7 @@ from PyQt5.QtGui import QIcon
 
 from qgis.core import QgsProcessingProvider
 from .save_attributes_algorithm import SaveAttributesAlgorithm
+#import more algorithm clases here. i.e different processing scripts 
 
 
 class SaveAttributesProvider(QgsProcessingProvider):
@@ -19,7 +20,7 @@ class SaveAttributesProvider(QgsProcessingProvider):
     def loadAlgorithms(self):
         #add the first algorithm
         self.addAlgorithm(SaveAttributesAlgorithm())
-        #add more algorithms
+        #add more algorithms i.e more processing scripts 
 
     def id(self):
         #the hovername of the tool/plugin
