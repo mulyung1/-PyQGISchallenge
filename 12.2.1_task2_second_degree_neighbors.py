@@ -21,8 +21,11 @@ def get_neighbors(fid):
 #call the method and store it in a variable
 first_degree_neighbors = get_neighbors(fid)
 
+'''-----------Exercise 11 done-------
+to add new selection to previous selection. 
+add a behaviour to the selectByIds() mtd'''
 # Apply the selection
-layer.selectByIds(first_degree_neighbors)
+layer.selectByIds(first_degree_neighbors, QgsVectorLayer.SelectBehavior.AddToSelection)
 
 second_degree_neighbors=set()
 
@@ -34,9 +37,12 @@ for y in first_degree_neighbors:
 second_degree_neighbors=second_degree_neighbors.difference(
     set(first_degree_neighbors))
 
+'''-----------Exercise 11 done-------
+to add new selection to previous selection. 
+add a behaviour to the selectByIds() mtd'''
 #remove the feature itself from the set if it exists
 second_degree_neighbors.discard(fid)
 #apply the selection
-layer.selectByIds(list(second_degree_neighbors))
+layer.selectByIds(list(second_degree_neighbors), QgsVectorLayer.SelectBehavior.AddToSelection)
 
 
