@@ -1,3 +1,10 @@
+'''
+task: user wants to select features neighbouring a farm of interest
+soln: a qgis action
+
+find instructions to create a new action here
+    https://courses.spatialthoughts.com/pyqgis-masterclass.html#qgis-actions
+'''
 #inject the layer id and feature id into script
 layer_id = '[%@layer_id%]'
 fid = [% $id %]
